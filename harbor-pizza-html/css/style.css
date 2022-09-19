@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*, *::after, *::before{
+    padding:0%;
+    margin:0%;
+    font-family: 'Open Sans', sans-serif;
+
+}
+body{
+    background-color: #fff;
+}
+.container{
+    
+    min-width: 373px;
+}
+nav{
+
+    background-color: #efefef;
+    box-shadow: 0rem .2rem 0.3125rem #aaaaaa;
+    display: flex;
+    justify-content: space-between;
+}
+nav .left, nav .right{
+    display: flex;
+    justify-content: space-around;
+}
+.left{
+    margin-left:1rem ;
+}
+.right{
+    margin-right:1rem ;
+}
+.logo > img{
+    width: 3rem;
+    height: 3.3rem;
+    margin-top: -.33rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height:100%;
+    cursor: pointer;
+}
+#harbor-pizza{
+    margin-left: .5rem;
+}
+
+.menu,
+.store-info{
+    position: relative;
+    display: inline-block;
+}
+.store-info{
+    margin-right: 1rem;
+}
+.menu-button{
+    background-color: transparent;
+    color: #000;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+.store-info-button{
+    background-color: transparent;
+    color: #000;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+}
+#oolink{
+    color: #000;
+    text-decoration: none;
+
+}
+.store-info-content{
+    display: none;
+    position: absolute;
+    right:.5%;
+    background-color: #f9f9f9;
+    min-width: 8.25rem;
+    box-shadow: 0rem .5rem 1rem 0rem rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.store-info-content p{
+    color: black;
+    padding: .8rem .7rem;
+    text-decoration: none;
+    display: block;
+}
+.menu-content a:hover{
+    background-color: #dedede;
+}
+.menu-button:hover,
+.store-info-button:hover{
+    background-color: #dedede;
+}
+.menu:hover .menu-content,
+.store-info:hover .store-info-content{
+    display: block;
+}
+.order-online-nav{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding:1rem;
+    
+}
+.order-online-nav:hover,
+.store-info:hover{
+    background-color: #dedede;
+}
+
+
+.store-locator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.map>iframe{
+    width: 90vw;
+    max-height: 60vw;
+    border-radius: 2rem;
+    box-shadow: .25rem .32rem 0.3125rem rgba(0, 0, 0, 0.422);
+}
+
+.feature-title,
+.popular-pizza-title,
+.create-your-own-p,
+.visit-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.feature-title > h3,
+.popular-pizza-title > h3,
+.create-your-own-p > h3,
+.visit-us > h3,
+.about-store-h3{
+    border-bottom: solid 2px red;
+}
+
+.popular-pizza{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.supreme-pizza,
+.hawaiian-pizza,
+.meatlovers-pizza,
+.pepperoni-pizza,
+.button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hawaiian-pizza > img,
+.supreme-pizza > img,
+.meatlovers-pizza > img,
+.pepperoni-pizza > img,
+.button > img{
+    border-radius: 1rem;
+    box-shadow: .25rem .32rem 0.3125rem rgba(0, 0, 0, 0.422);
+    margin: 1rem;
+    width: 15vw;
+    height: 15vw;
+    min-width: 7rem;
+    min-height: 7rem;
+}
+.featured-deals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pizza-link{
+    text-decoration: none;
+    color: #000;
+}
+.pizza-link:visited{
+    color: #000;
+}
+footer{
+    margin-top: 4rem;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+.create-your-own-pizza{
+    margin-top: 2rem;
+}
+.create-your-own>p{
+    text-align: center;
+}
+
+.bottom{
+    box-shadow: 0rem -.2rem .3125rem #aaaaaa;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    background-color: #efefef;
+}
+
+.my-github a{
+    color: #000;
+    text-decoration: none;
+}
+.inline-container{
+    padding-inline: 10px;
+}
+/*testing*/
+
+
+.start-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-store-h3{
+    margin-top: 1rem;
+}
+.about-store-p-img{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 1500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+} 
+.about-the-store-p > p{
+    max-width: 45rem;
+}
+.about-the-store-img > img{
+    max-width: 25rem;
+    border-radius: 1rem;
+    box-shadow: .25rem .32rem 0.3125rem rgba(0, 0, 0, 0.422);
+}
+
+@media only screen and (max-width:800px){
+    .about-the-store-p{
+        padding-inline: 1rem;
+    }
+    .about-the-store-img{
+        margin-top: 1rem;
+    }
+    .about-the-store-img > img{
+        max-width: 20rem;
+    }
+}
